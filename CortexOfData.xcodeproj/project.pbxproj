@@ -22,6 +22,11 @@
 		2F58440129123F2800A9F76F /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440029123F2800A9F76F /* CoreDataProvider.swift */; };
 		2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844042912402300A9F76F /* URL+Extensions.swift */; };
 		2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */; };
+		2F5844092912FD1500A9F76F /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844082912FD1500A9F76F /* TimeInterval+Extensions.swift */; };
+		2F58440C2913081E00A9F76F /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440B2913081E00A9F76F /* Tab.swift */; };
+		2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440D2913087100A9F76F /* ActiveLogsScreen.swift */; };
+		2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440F2913087700A9F76F /* AllLogsScreen.swift */; };
+		2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844112913087C00A9F76F /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		2F58440029123F2800A9F76F /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		2F5844042912402300A9F76F /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataProvider+Extensions.swift"; sourceTree = "<group>"; };
+		2F5844082912FD1500A9F76F /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		2F58440B2913081E00A9F76F /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		2F58440D2913087100A9F76F /* ActiveLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogsScreen.swift; sourceTree = "<group>"; };
+		2F58440F2913087700A9F76F /* AllLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLogsScreen.swift; sourceTree = "<group>"; };
+		2F5844112913087C00A9F76F /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 				2F5843CA291239A400A9F76F /* ContentView.swift */,
 				2F5843CC291239A500A9F76F /* Assets.xcassets */,
 				2F5843CE291239A500A9F76F /* CortexOfData.entitlements */,
+				2F58440A2913081800A9F76F /* UI */,
 				2F5844032912401A00A9F76F /* Extensions */,
 				2F5843D829123AE300A9F76F /* Data */,
 				2F5843CF291239A500A9F76F /* Preview Content */,
@@ -154,8 +165,20 @@
 			isa = PBXGroup;
 			children = (
 				2F5844042912402300A9F76F /* URL+Extensions.swift */,
+				2F5844082912FD1500A9F76F /* TimeInterval+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F58440A2913081800A9F76F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F58440B2913081E00A9F76F /* Tab.swift */,
+				2F58440D2913087100A9F76F /* ActiveLogsScreen.swift */,
+				2F58440F2913087700A9F76F /* AllLogsScreen.swift */,
+				2F5844112913087C00A9F76F /* SettingsScreen.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,15 +253,20 @@
 			files = (
 				2F58440129123F2800A9F76F /* CoreDataProvider.swift in Sources */,
 				2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */,
+				2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */,
 				2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */,
+				2F5844092912FD1500A9F76F /* TimeInterval+Extensions.swift in Sources */,
 				2F5843CB291239A400A9F76F /* ContentView.swift in Sources */,
 				2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */,
 				2F5843FE29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift in Sources */,
 				2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */,
 				2F5843EF29123C8700A9F76F /* FeedLog+CoreDataClass.swift in Sources */,
+				2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */,
+				2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */,
 				2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */,
 				2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */,
 				2F5843FA29123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift in Sources */,
+				2F58440C2913081E00A9F76F /* Tab.swift in Sources */,
 				2F5843F329123C8700A9F76F /* BiometricLog+CoreDataClass.swift in Sources */,
 				2F5843DC29123AF900A9F76F /* Entities.xcdatamodeld in Sources */,
 			);
