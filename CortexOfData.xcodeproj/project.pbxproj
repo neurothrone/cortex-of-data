@@ -11,6 +11,17 @@
 		2F5843CB291239A400A9F76F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843CA291239A400A9F76F /* ContentView.swift */; };
 		2F5843CD291239A500A9F76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843CC291239A500A9F76F /* Assets.xcassets */; };
 		2F5843D1291239A500A9F76F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843D0291239A500A9F76F /* Preview Assets.xcassets */; };
+		2F5843DC29123AF900A9F76F /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843DA29123AF900A9F76F /* Entities.xcdatamodeld */; };
+		2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */; };
+		2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */; };
+		2F5843EF29123C8700A9F76F /* FeedLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E329123C8700A9F76F /* FeedLog+CoreDataClass.swift */; };
+		2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */; };
+		2F5843F329123C8700A9F76F /* BiometricLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E729123C8700A9F76F /* BiometricLog+CoreDataClass.swift */; };
+		2F5843FA29123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */; };
+		2F5843FE29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843FC29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift */; };
+		2F58440129123F2800A9F76F /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440029123F2800A9F76F /* CoreDataProvider.swift */; };
+		2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844042912402300A9F76F /* URL+Extensions.swift */; };
+		2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,17 @@
 		2F5843CC291239A500A9F76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F5843CE291239A500A9F76F /* CortexOfData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CortexOfData.entitlements; sourceTree = "<group>"; };
 		2F5843D0291239A500A9F76F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F5843DB29123AF900A9F76F /* Entities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entities.xcdatamodel; sourceTree = "<group>"; };
+		2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843E329123C8700A9F76F /* FeedLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeartLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843E729123C8700A9F76F /* BiometricLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeFrameLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843FC29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BodyWeightLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F58440029123F2800A9F76F /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		2F5844042912402300A9F76F /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataProvider+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,8 @@
 				2F5843CA291239A400A9F76F /* ContentView.swift */,
 				2F5843CC291239A500A9F76F /* Assets.xcassets */,
 				2F5843CE291239A500A9F76F /* CortexOfData.entitlements */,
+				2F5844032912401A00A9F76F /* Extensions */,
+				2F5843D829123AE300A9F76F /* Data */,
 				2F5843CF291239A500A9F76F /* Preview Content */,
 			);
 			path = CortexOfData;
@@ -67,6 +91,71 @@
 				2F5843D0291239A500A9F76F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F5843D829123AE300A9F76F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2F58440229123F3200A9F76F /* Shared */,
+				2F5843D929123AE800A9F76F /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2F5843D929123AE800A9F76F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2F58440029123F2800A9F76F /* CoreDataProvider.swift */,
+				2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */,
+				2F5843F529123C8F00A9F76F /* Models */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2F5843F529123C8F00A9F76F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F5843DA29123AF900A9F76F /* Entities.xcdatamodeld */,
+				2F5843F729123C9C00A9F76F /* BiometricLogs */,
+				2F5843F629123C9300A9F76F /* TimeFrameLogs */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F5843F629123C9300A9F76F /* TimeFrameLogs */ = {
+			isa = PBXGroup;
+			children = (
+				2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */,
+				2F5843E329123C8700A9F76F /* FeedLog+CoreDataClass.swift */,
+				2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */,
+				2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */,
+			);
+			path = TimeFrameLogs;
+			sourceTree = "<group>";
+		};
+		2F5843F729123C9C00A9F76F /* BiometricLogs */ = {
+			isa = PBXGroup;
+			children = (
+				2F5843E729123C8700A9F76F /* BiometricLog+CoreDataClass.swift */,
+				2F5843FC29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift */,
+				2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */,
+			);
+			path = BiometricLogs;
+			sourceTree = "<group>";
+		};
+		2F58440229123F3200A9F76F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2F5844032912401A00A9F76F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F5844042912402300A9F76F /* URL+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +228,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F58440129123F2800A9F76F /* CoreDataProvider.swift in Sources */,
+				2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */,
+				2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */,
 				2F5843CB291239A400A9F76F /* ContentView.swift in Sources */,
+				2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */,
+				2F5843FE29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift in Sources */,
+				2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */,
+				2F5843EF29123C8700A9F76F /* FeedLog+CoreDataClass.swift in Sources */,
 				2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */,
+				2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */,
+				2F5843FA29123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift in Sources */,
+				2F5843F329123C8700A9F76F /* BiometricLog+CoreDataClass.swift in Sources */,
+				2F5843DC29123AF900A9F76F /* Entities.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +454,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F5843DA29123AF900A9F76F /* Entities.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F5843DB29123AF900A9F76F /* Entities.xcdatamodel */,
+			);
+			currentVersion = 2F5843DB29123AF900A9F76F /* Entities.xcdatamodel */;
+			path = Entities.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2F5843BD291239A400A9F76F /* Project object */;
 }
