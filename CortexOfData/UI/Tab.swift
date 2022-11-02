@@ -8,8 +8,8 @@
 import Foundation
 
 enum Tab: String {
-  case activeLogs = "Active Logs"
   case allLogs = "All Logs"
+  case activeLogs = "Active Logs"
   case settings = "Settings"
 }
 
