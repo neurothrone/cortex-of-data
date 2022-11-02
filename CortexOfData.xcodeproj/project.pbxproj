@@ -174,8 +174,8 @@
 		2F5844032912401A00A9F76F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2F5844042912402300A9F76F /* URL+Extensions.swift */,
 				2F5844082912FD1500A9F76F /* TimeInterval+Extensions.swift */,
+				2F5844042912402300A9F76F /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
