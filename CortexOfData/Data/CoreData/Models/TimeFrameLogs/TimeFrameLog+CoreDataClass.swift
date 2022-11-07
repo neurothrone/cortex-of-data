@@ -16,7 +16,7 @@ public class TimeFrameLog: NSManagedObject {
   }
 
   @NSManaged public var id: String
-  @NSManaged public var startedDate: Date?
+  @NSManaged public var startedDate: Date
   @NSManaged public var stoppedDate: Date?
   
   public override func awakeFromInsert() {

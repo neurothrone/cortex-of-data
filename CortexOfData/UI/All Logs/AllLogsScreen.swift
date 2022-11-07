@@ -12,8 +12,8 @@ struct AllLogsScreen: View {
     NavigationStack {
       List {
         Section {
-          NavigationLink(destination: FeedLogsScreen()) {
-            Label("Feeding", systemImage: "fork.knife")
+          NavigationLink(destination: FastLogsScreen()) {
+            Label("Fasting", systemImage: "fork.knife")
           }
           NavigationLink(destination: SleepLogsScreen()) {
             Label("Sleeping", systemImage: "bed.double")
