@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1007BE2919EC1C004CE72E /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */; };
+		2F1007DB291A010A004CE72E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007DA291A010A004CE72E /* Date+Extensions.swift */; };
 		2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */; };
 		2F5843CB291239A400A9F76F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843CA291239A400A9F76F /* ContentView.swift */; };
 		2F5843CD291239A500A9F76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843CC291239A500A9F76F /* Assets.xcassets */; };
@@ -14,7 +16,7 @@
 		2F5843DC29123AF900A9F76F /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843DA29123AF900A9F76F /* Entities.xcdatamodeld */; };
 		2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */; };
 		2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */; };
-		2F5843EF29123C8700A9F76F /* FeedLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E329123C8700A9F76F /* FeedLog+CoreDataClass.swift */; };
+		2F5843EF29123C8700A9F76F /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E329123C8700A9F76F /* FastLog+CoreDataClass.swift */; };
 		2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */; };
 		2F5843F329123C8700A9F76F /* BiometricLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E729123C8700A9F76F /* BiometricLog+CoreDataClass.swift */; };
 		2F5843FA29123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */; };
@@ -27,6 +29,10 @@
 		2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440D2913087100A9F76F /* ActiveLogsScreen.swift */; };
 		2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440F2913087700A9F76F /* AllLogsScreen.swift */; };
 		2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844112913087C00A9F76F /* SettingsScreen.swift */; };
+		2F7B876B291E27C5008E889C /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876A291E27C5008E889C /* ActiveLogView.swift */; };
+		2F7B876D291E27CA008E889C /* InactiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876C291E27CA008E889C /* InactiveLogView.swift */; };
+		2F7B876F291E283D008E889C /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876E291E283D008E889C /* DateFormatter+Extensions.swift */; };
+		2F7B8771291E2888008E889C /* FastLogsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B8770291E2888008E889C /* FastLogsRowView.swift */; };
 		2FE80AE629131220000B0222 /* BodyWeightLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE529131220000B0222 /* BodyWeightLogsScreen.swift */; };
 		2FE80AE82913122A000B0222 /* HeartMetricsLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE72913122A000B0222 /* HeartMetricsLogsScreen.swift */; };
 		2FE80AEA29131232000B0222 /* FastLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE929131232000B0222 /* FastLogsScreen.swift */; };
@@ -37,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastLog+Preview.swift"; sourceTree = "<group>"; };
+		2F1007DA291A010A004CE72E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		2F5843C5291239A400A9F76F /* CortexOfData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CortexOfData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CortexOfDataApp.swift; sourceTree = "<group>"; };
 		2F5843CA291239A400A9F76F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,7 +54,7 @@
 		2F5843DB29123AF900A9F76F /* Entities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entities.xcdatamodel; sourceTree = "<group>"; };
 		2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepLog+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkLog+CoreDataClass.swift"; sourceTree = "<group>"; };
-		2F5843E329123C8700A9F76F /* FeedLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedLog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F5843E329123C8700A9F76F /* FastLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastLog+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeartLog+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2F5843E729123C8700A9F76F /* BiometricLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricLog+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeFrameLog+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -59,6 +67,10 @@
 		2F58440D2913087100A9F76F /* ActiveLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogsScreen.swift; sourceTree = "<group>"; };
 		2F58440F2913087700A9F76F /* AllLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLogsScreen.swift; sourceTree = "<group>"; };
 		2F5844112913087C00A9F76F /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		2F7B876A291E27C5008E889C /* ActiveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogView.swift; sourceTree = "<group>"; };
+		2F7B876C291E27CA008E889C /* InactiveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InactiveLogView.swift; sourceTree = "<group>"; };
+		2F7B876E291E283D008E889C /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		2F7B8770291E2888008E889C /* FastLogsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLogsRowView.swift; sourceTree = "<group>"; };
 		2FE80AE529131220000B0222 /* BodyWeightLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightLogsScreen.swift; sourceTree = "<group>"; };
 		2FE80AE72913122A000B0222 /* HeartMetricsLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartMetricsLogsScreen.swift; sourceTree = "<group>"; };
 		2FE80AE929131232000B0222 /* FastLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLogsScreen.swift; sourceTree = "<group>"; };
@@ -115,6 +127,7 @@
 		2F5843CF291239A500A9F76F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */,
 				2F5843D0291239A500A9F76F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -154,7 +167,7 @@
 			children = (
 				2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */,
 				2FE80AF129132480000B0222 /* TimeFrameLog+Extensions.swift */,
-				2F5843E329123C8700A9F76F /* FeedLog+CoreDataClass.swift */,
+				2F5843E329123C8700A9F76F /* FastLog+CoreDataClass.swift */,
 				2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */,
 				2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */,
 			);
@@ -182,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				2FE80AF429133231000B0222 /* Collection+Extensions.swift */,
+				2F1007DA291A010A004CE72E /* Date+Extensions.swift */,
+				2F7B876E291E283D008E889C /* DateFormatter+Extensions.swift */,
 				2F5844082912FD1500A9F76F /* TimeInterval+Extensions.swift */,
 				2F5844042912402300A9F76F /* URL+Extensions.swift */,
 			);
@@ -197,6 +212,17 @@
 				2FE80ADE291311DF000B0222 /* Settings */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		2F7B8769291E27BB008E889C /* Fasting */ = {
+			isa = PBXGroup;
+			children = (
+				2FE80AE929131232000B0222 /* FastLogsScreen.swift */,
+				2F7B876A291E27C5008E889C /* ActiveLogView.swift */,
+				2F7B876C291E27CA008E889C /* InactiveLogView.swift */,
+				2F7B8770291E2888008E889C /* FastLogsRowView.swift */,
+			);
+			path = Fasting;
 			sourceTree = "<group>";
 		};
 		2FE80ADC291311D7000B0222 /* All Logs */ = {
@@ -228,7 +254,7 @@
 		2FE80AEF2913125B000B0222 /* TimeFrame Logs */ = {
 			isa = PBXGroup;
 			children = (
-				2FE80AE929131232000B0222 /* FastLogsScreen.swift */,
+				2F7B8769291E27BB008E889C /* Fasting */,
 				2FE80AEB29131251000B0222 /* SleepLogsScreen.swift */,
 				2FE80AED29131256000B0222 /* WalkLogsScreen.swift */,
 			);
@@ -318,6 +344,7 @@
 				2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */,
 				2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */,
 				2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */,
+				2F7B876D291E27CA008E889C /* InactiveLogView.swift in Sources */,
 				2FE80AF529133231000B0222 /* Collection+Extensions.swift in Sources */,
 				2F5844092912FD1500A9F76F /* TimeInterval+Extensions.swift in Sources */,
 				2FE80AEE29131256000B0222 /* WalkLogsScreen.swift in Sources */,
@@ -325,10 +352,13 @@
 				2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */,
 				2F5843FE29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift in Sources */,
 				2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */,
-				2F5843EF29123C8700A9F76F /* FeedLog+CoreDataClass.swift in Sources */,
+				2F1007DB291A010A004CE72E /* Date+Extensions.swift in Sources */,
+				2F5843EF29123C8700A9F76F /* FastLog+CoreDataClass.swift in Sources */,
+				2F7B876F291E283D008E889C /* DateFormatter+Extensions.swift in Sources */,
 				2FE80AE82913122A000B0222 /* HeartMetricsLogsScreen.swift in Sources */,
 				2FE80AF229132480000B0222 /* TimeFrameLog+Extensions.swift in Sources */,
 				2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */,
+				2F1007BE2919EC1C004CE72E /* FastLog+Preview.swift in Sources */,
 				2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */,
 				2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */,
 				2FE80AE629131220000B0222 /* BodyWeightLogsScreen.swift in Sources */,
@@ -336,9 +366,11 @@
 				2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */,
 				2F5843FA29123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift in Sources */,
 				2F58440C2913081E00A9F76F /* Tab.swift in Sources */,
+				2F7B8771291E2888008E889C /* FastLogsRowView.swift in Sources */,
 				2F5843F329123C8700A9F76F /* BiometricLog+CoreDataClass.swift in Sources */,
 				2FE80AEC29131251000B0222 /* SleepLogsScreen.swift in Sources */,
 				2F5843DC29123AF900A9F76F /* Entities.xcdatamodeld in Sources */,
+				2F7B876B291E27C5008E889C /* ActiveLogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,8 +19,8 @@ final class CoreDataProvider {
   static let shared: CoreDataProvider = .init()
   static let preview: CoreDataProvider = {
     let provider = CoreDataProvider(inMemory: true)
-    let viewContext = provider.viewContext
-    // TODO: Generate preview items using viewContext
+    let context = provider.viewContext
+    FastLog.Preview.createSample(using: context)
     return provider
   }()
   

@@ -62,25 +62,23 @@ struct FastLogsScreen: View {
   
   private var content: some View {
     List {
-      ForEach(fastLogs) { log in
-        VStack(alignment: .leading, spacing: 4) {
-          HStack {
-            Text(log.startedAt)
-              .foregroundColor(.blue)
-            Spacer()
-            Text(log.stoppedAt)
-              .foregroundColor(.orange)
-          }
-          
-          Text(log.duration.toHoursAndMinutes)
-            .font(.caption.bold())
-            .foregroundColor(.secondary)
+      Group {
+        if hasPartialLog {
+          ActiveLogView(log: fastLogs.first!, onStopTapped: completePartialFeedLog)
+        } else {
+          InactiveLogView(onStartTapped: createPartialFeedLog)
         }
+      }
+      
+      ForEach(fastLogs) { log in
+        FastLogsRowView(log: log)
       }
       .onDelete(perform: delete)
     }
   }
 }
+
+
 
 extension FastLogsScreen {
   private func createPartialFeedLog() {
@@ -106,6 +104,6 @@ extension FastLogsScreen {
 struct FastLogsScreen_Previews: PreviewProvider {
   static var previews: some View {
     FastLogsScreen()
-    //      .environment(\.managedObjectContext, CoreDataProvider.shared.viewContext)
+      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }
