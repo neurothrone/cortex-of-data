@@ -1,19 +1,19 @@
 //
-//  FastLogsRowView.swift
+//  LogListRowView.swift
 //  CortexOfData
 //
-//  Created by Zaid Neurothrone on 2022-11-11.
+//  Created by Zaid Neurothrone on 2022-11-12.
 //
 
 import SwiftUI
 
-struct FastLogsRowView: View {
-  @ObservedObject var log: FastLog
+struct LogListRowView<T: TimeFrameLog>: View {
+  @ObservedObject var log: T
   
   var body: some View {
     VStack(alignment: .leading, spacing: 4) {
       HStack {
-        Label(log.startedDate.inReadableFormat, systemImage: "play.fill")
+        Label(log.isFault ? "Unknown" :  log.startedDate.inReadableFormat, systemImage: "play.fill")
           .foregroundColor(.blue)
         
         Spacer()
@@ -33,8 +33,8 @@ struct FastLogsRowView: View {
   }
 }
 
-//struct FastLogsRowView_Previews: PreviewProvider {
+//struct LogListRowView_Previews: PreviewProvider {
 //  static var previews: some View {
-//    FastLogsRowView()
+//    LogListRowView()
 //  }
 //}

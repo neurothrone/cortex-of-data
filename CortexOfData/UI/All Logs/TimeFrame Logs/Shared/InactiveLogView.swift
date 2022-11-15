@@ -12,8 +12,8 @@ struct InactiveLogView: View {
   
   var body: some View {
     HStack {
+      Text("No active log yet. Press the button to begin.")
       VStack(alignment: .leading) {
-        Text("No active fast yet. Press the button to begin.")
         
         Button("Start", action: onStartTapped)
           .buttonStyle(.borderedProminent)

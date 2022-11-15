@@ -31,9 +31,9 @@ extension TimeFrameLog {
     return request
   }
   
-  static func firstIncompleteLog<T: TimeFrameLog>() -> NSFetchRequest<T> {
+  static func incompleteLogs<T: TimeFrameLog>() -> NSFetchRequest<T> {
     let request: NSFetchRequest<T> = NSFetchRequest(entityName: String(describing: T.self))
-    request.fetchLimit = 1
+//    request.fetchLimit = 1
     request.sortDescriptors = [NSSortDescriptor(keyPath: \T.startedDate, ascending: false)]
     request.predicate = NSPredicate(format: "stoppedDate == nil")
     return request

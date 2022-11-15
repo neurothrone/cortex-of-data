@@ -1,5 +1,5 @@
 //
-//  WalkLogsScreen.swift
+//  FastLogsScreen.swift
 //  CortexOfData
 //
 //  Created by Zaid Neurothrone on 2022-11-02.
@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct WalkLogsScreen: View {
+struct FastLogsScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
-  @FetchRequest(fetchRequest: WalkLog.all(), animation: .default)
-  private var walkLogs: FetchedResults<WalkLog>
+  @FetchRequest(fetchRequest: FastLog.all(), animation: .default)
+  private var fastLogs: FetchedResults<FastLog>
   
   var body: some View {
-    LogListView(logs: walkLogs)
+    LogListView(logs: fastLogs)
   }
 }
 
-struct WalkLogsScreen_Previews: PreviewProvider {
+struct FastLogsScreen_Previews: PreviewProvider {
   static var previews: some View {
-    WalkLogsScreen()
+    FastLogsScreen()
       .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }

@@ -9,19 +9,19 @@ import SwiftUI
 
 struct ActiveLogsScreen: View {
   @FetchRequest(
-    fetchRequest: FastLog.firstIncompleteLog(),
+    fetchRequest: FastLog.incompleteLogs(),
     animation: .default
   )
   private var incompleteFastLogs: FetchedResults<FastLog>
   
   @FetchRequest(
-    fetchRequest: SleepLog.firstIncompleteLog(),
+    fetchRequest: SleepLog.incompleteLogs(),
     animation: .default
   )
   private var incompleteSleepLogs: FetchedResults<SleepLog>
   
   @FetchRequest(
-    fetchRequest: WalkLog.firstIncompleteLog(),
+    fetchRequest: WalkLog.incompleteLogs(),
     animation: .default
   )
   private var incompleteWalkLogs: FetchedResults<WalkLog>

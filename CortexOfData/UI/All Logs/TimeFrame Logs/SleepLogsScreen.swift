@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct SleepLogsScreen: View {
+  @Environment(\.managedObjectContext) private var viewContext
+  
+  @FetchRequest(fetchRequest: SleepLog.all(), animation: .default)
+  private var sleepLogs: FetchedResults<SleepLog>
+  
   var body: some View {
-    Text("Sleep Logs: In progress...")
+    LogListView(logs: sleepLogs)
   }
 }
 
 struct SleepLogsScreen_Previews: PreviewProvider {
   static var previews: some View {
     SleepLogsScreen()
+      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }
