@@ -30,7 +30,6 @@
 		2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440F2913087700A9F76F /* AllLogsScreen.swift */; };
 		2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844112913087C00A9F76F /* SettingsScreen.swift */; };
 		2F7B876B291E27C5008E889C /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876A291E27C5008E889C /* ActiveLogView.swift */; };
-		2F7B876D291E27CA008E889C /* InactiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876C291E27CA008E889C /* InactiveLogView.swift */; };
 		2F7B876F291E283D008E889C /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876E291E283D008E889C /* DateFormatter+Extensions.swift */; };
 		2F7B878B291FF0CC008E889C /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B878A291FF0CC008E889C /* LogListRowView.swift */; };
 		2F7B879B29242561008E889C /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879A29242561008E889C /* LogListView.swift */; };
@@ -70,7 +69,6 @@
 		2F58440F2913087700A9F76F /* AllLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLogsScreen.swift; sourceTree = "<group>"; };
 		2F5844112913087C00A9F76F /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		2F7B876A291E27C5008E889C /* ActiveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLogView.swift; sourceTree = "<group>"; };
-		2F7B876C291E27CA008E889C /* InactiveLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InactiveLogView.swift; sourceTree = "<group>"; };
 		2F7B876E291E283D008E889C /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		2F7B878A291FF0CC008E889C /* LogListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListRowView.swift; sourceTree = "<group>"; };
 		2F7B879A29242561008E889C /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 				2F7B879C2924260E008E889C /* SwipeableLogView.swift */,
 				2F7B878A291FF0CC008E889C /* LogListRowView.swift */,
 				2F7B876A291E27C5008E889C /* ActiveLogView.swift */,
-				2F7B876C291E27CA008E889C /* InactiveLogView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -350,7 +347,6 @@
 				2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */,
 				2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */,
 				2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */,
-				2F7B876D291E27CA008E889C /* InactiveLogView.swift in Sources */,
 				2FE80AF529133231000B0222 /* Collection+Extensions.swift in Sources */,
 				2F5844092912FD1500A9F76F /* TimeInterval+Extensions.swift in Sources */,
 				2FE80AEE29131256000B0222 /* WalkLogsScreen.swift in Sources */,
