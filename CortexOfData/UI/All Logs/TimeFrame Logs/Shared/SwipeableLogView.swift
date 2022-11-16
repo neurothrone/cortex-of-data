@@ -59,13 +59,8 @@ struct SwipeableLogView<T: TimeFrameLog>: View {
       .tint(.purple)
     }
     .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-      Button(role: .destructive, action: deleteIncompleteLog) {
-        Label("Delete", systemImage: "trash")
-      }
-      .disabled(!isTimerRunning)
-      
       Button(action: resetPartialLog) {
-        Label("Reset", systemImage: "clock")
+        Label("Reset", systemImage: "clock.arrow.circlepath")
       }
       .disabled(!isTimerRunning)
       .tint(.orange)
@@ -99,16 +94,6 @@ extension SwipeableLogView {
     
     incompleteLog.startedDate = .now
     CoreDataProvider.save(using: viewContext)
-  }
-  
-  private func deleteIncompleteLog() {
-    guard let incompleteLog = incompleteLogs.first else { return }
-    
-    isTimerRunning = false
-    
-    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-      CoreDataProvider.delete(object: incompleteLog, using: viewContext)
-    }
   }
 }
 
