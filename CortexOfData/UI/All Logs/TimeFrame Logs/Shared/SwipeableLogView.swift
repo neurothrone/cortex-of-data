@@ -51,7 +51,7 @@ struct SwipeableLogView<T: TimeFrameLog>: View {
         Label(isTimerRunning
               ? "Stop"
               : "Start",
-              systemImage: !isTimerRunning
+              systemImage: isTimerRunning
               ? "clock.badge.xmark"
               : "clock.badge.checkmark"
         )
