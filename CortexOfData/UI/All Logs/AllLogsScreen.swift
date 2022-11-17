@@ -12,13 +12,13 @@ struct AllLogsScreen: View {
     NavigationStack {
       List {
         Section {
-          NavigationLink(destination: FastLogsScreen()) {
+          NavigationLink(destination: GenericLogsScreen<FastLog>()) {
             Label("Fasting", systemImage: "fork.knife")
           }
-          NavigationLink(destination: SleepLogsScreen()) {
+          NavigationLink(destination: GenericLogsScreen<SleepLog>()) {
             Label("Sleeping", systemImage: "bed.double")
           }
-          NavigationLink(destination: WalkLogsScreen()) {
+          NavigationLink(destination: GenericLogsScreen<WalkLog>()) {
             Label("Walking", systemImage: "figure.walk")
           }
         } header: {

@@ -34,11 +34,14 @@
 		2F7B878B291FF0CC008E889C /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B878A291FF0CC008E889C /* LogListRowView.swift */; };
 		2F7B879B29242561008E889C /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879A29242561008E889C /* LogListView.swift */; };
 		2F7B879D2924260E008E889C /* SwipeableLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879C2924260E008E889C /* SwipeableLogView.swift */; };
+		2F7B87AE2925AAEA008E889C /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87AD2925AAEA008E889C /* CustomDatePicker.swift */; };
+		2F7B87B02925AB0B008E889C /* DatePickerDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87AF2925AB0B008E889C /* DatePickerDisplayMode.swift */; };
+		2F7B87B22925AB34008E889C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B12925AB34008E889C /* Constants.swift */; };
+		2F7B87B42925AB7A008E889C /* AddManualLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B32925AB7A008E889C /* AddManualLogSheet.swift */; };
+		2F7B87B62925ABA1008E889C /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B52925ABA1008E889C /* NSManagedObject+Extensions.swift */; };
+		2F7B87B82925AC18008E889C /* GenericLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B72925AC18008E889C /* GenericLogsScreen.swift */; };
 		2FE80AE629131220000B0222 /* BodyWeightLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE529131220000B0222 /* BodyWeightLogsScreen.swift */; };
 		2FE80AE82913122A000B0222 /* HeartMetricsLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE72913122A000B0222 /* HeartMetricsLogsScreen.swift */; };
-		2FE80AEA29131232000B0222 /* FastLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE929131232000B0222 /* FastLogsScreen.swift */; };
-		2FE80AEC29131251000B0222 /* SleepLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AEB29131251000B0222 /* SleepLogsScreen.swift */; };
-		2FE80AEE29131256000B0222 /* WalkLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AED29131256000B0222 /* WalkLogsScreen.swift */; };
 		2FE80AF229132480000B0222 /* TimeFrameLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AF129132480000B0222 /* TimeFrameLog+Extensions.swift */; };
 		2FE80AF529133231000B0222 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AF429133231000B0222 /* Collection+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -73,11 +76,14 @@
 		2F7B878A291FF0CC008E889C /* LogListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListRowView.swift; sourceTree = "<group>"; };
 		2F7B879A29242561008E889C /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
 		2F7B879C2924260E008E889C /* SwipeableLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLogView.swift; sourceTree = "<group>"; };
+		2F7B87AD2925AAEA008E889C /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		2F7B87AF2925AB0B008E889C /* DatePickerDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDisplayMode.swift; sourceTree = "<group>"; };
+		2F7B87B12925AB34008E889C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F7B87B32925AB7A008E889C /* AddManualLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddManualLogSheet.swift; sourceTree = "<group>"; };
+		2F7B87B52925ABA1008E889C /* NSManagedObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extensions.swift"; sourceTree = "<group>"; };
+		2F7B87B72925AC18008E889C /* GenericLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericLogsScreen.swift; sourceTree = "<group>"; };
 		2FE80AE529131220000B0222 /* BodyWeightLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightLogsScreen.swift; sourceTree = "<group>"; };
 		2FE80AE72913122A000B0222 /* HeartMetricsLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartMetricsLogsScreen.swift; sourceTree = "<group>"; };
-		2FE80AE929131232000B0222 /* FastLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLogsScreen.swift; sourceTree = "<group>"; };
-		2FE80AEB29131251000B0222 /* SleepLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogsScreen.swift; sourceTree = "<group>"; };
-		2FE80AED29131256000B0222 /* WalkLogsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkLogsScreen.swift; sourceTree = "<group>"; };
 		2FE80AF129132480000B0222 /* TimeFrameLog+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeFrameLog+Extensions.swift"; sourceTree = "<group>"; };
 		2FE80AF329132B9E000B0222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2FE80AF429133231000B0222 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 			children = (
 				2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */,
 				2F5843CA291239A400A9F76F /* ContentView.swift */,
+				2F7B87B12925AB34008E889C /* Constants.swift */,
 				2F5843CC291239A500A9F76F /* Assets.xcassets */,
 				2F5843CE291239A500A9F76F /* CortexOfData.entitlements */,
 				2FE80AF329132B9E000B0222 /* Info.plist */,
@@ -149,6 +156,7 @@
 			children = (
 				2F58440029123F2800A9F76F /* CoreDataProvider.swift */,
 				2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */,
+				2F7B87B52925ABA1008E889C /* NSManagedObject+Extensions.swift */,
 				2F5843F529123C8F00A9F76F /* Models */,
 			);
 			path = CoreData;
@@ -208,23 +216,38 @@
 		2F58440A2913081800A9F76F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2F58440B2913081E00A9F76F /* Tab.swift */,
 				2FE80ADD291311DC000B0222 /* Active Logs */,
 				2FE80ADC291311D7000B0222 /* All Logs */,
 				2FE80ADE291311DF000B0222 /* Settings */,
+				2F7B87B92925B1D2008E889C /* Shared */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		2F7B8789291FF0AF008E889C /* Shared */ = {
+		2F7B87B92925B1D2008E889C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				2F7B879A29242561008E889C /* LogListView.swift */,
-				2F7B879C2924260E008E889C /* SwipeableLogView.swift */,
-				2F7B878A291FF0CC008E889C /* LogListRowView.swift */,
-				2F7B876A291E27C5008E889C /* ActiveLogView.swift */,
+				2F7B87BA2925B1D4008E889C /* Models */,
+				2F7B87BB2925B1D8008E889C /* Views */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		2F7B87BA2925B1D4008E889C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F58440B2913081E00A9F76F /* Tab.swift */,
+				2F7B87AF2925AB0B008E889C /* DatePickerDisplayMode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F7B87BB2925B1D8008E889C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F7B87AD2925AAEA008E889C /* CustomDatePicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2FE80ADC291311D7000B0222 /* All Logs */ = {
@@ -256,10 +279,12 @@
 		2FE80AEF2913125B000B0222 /* TimeFrame Logs */ = {
 			isa = PBXGroup;
 			children = (
-				2FE80AE929131232000B0222 /* FastLogsScreen.swift */,
-				2FE80AEB29131251000B0222 /* SleepLogsScreen.swift */,
-				2FE80AED29131256000B0222 /* WalkLogsScreen.swift */,
-				2F7B8789291FF0AF008E889C /* Shared */,
+				2F7B87B72925AC18008E889C /* GenericLogsScreen.swift */,
+				2F7B879A29242561008E889C /* LogListView.swift */,
+				2F7B879C2924260E008E889C /* SwipeableLogView.swift */,
+				2F7B878A291FF0CC008E889C /* LogListRowView.swift */,
+				2F7B876A291E27C5008E889C /* ActiveLogView.swift */,
+				2F7B87B32925AB7A008E889C /* AddManualLogSheet.swift */,
 			);
 			path = "TimeFrame Logs";
 			sourceTree = "<group>";
@@ -345,14 +370,18 @@
 			files = (
 				2F58440129123F2800A9F76F /* CoreDataProvider.swift in Sources */,
 				2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */,
+				2F7B87B62925ABA1008E889C /* NSManagedObject+Extensions.swift in Sources */,
+				2F7B87AE2925AAEA008E889C /* CustomDatePicker.swift in Sources */,
+				2F7B87B82925AC18008E889C /* GenericLogsScreen.swift in Sources */,
 				2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */,
+				2F7B87B42925AB7A008E889C /* AddManualLogSheet.swift in Sources */,
 				2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */,
 				2FE80AF529133231000B0222 /* Collection+Extensions.swift in Sources */,
 				2F5844092912FD1500A9F76F /* TimeInterval+Extensions.swift in Sources */,
-				2FE80AEE29131256000B0222 /* WalkLogsScreen.swift in Sources */,
 				2F5843CB291239A400A9F76F /* ContentView.swift in Sources */,
 				2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */,
 				2F5843FE29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift in Sources */,
+				2F7B87B02925AB0B008E889C /* DatePickerDisplayMode.swift in Sources */,
 				2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */,
 				2F7B879D2924260E008E889C /* SwipeableLogView.swift in Sources */,
 				2F7B878B291FF0CC008E889C /* LogListRowView.swift in Sources */,
@@ -366,13 +395,12 @@
 				2F7B879B29242561008E889C /* LogListView.swift in Sources */,
 				2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */,
 				2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */,
+				2F7B87B22925AB34008E889C /* Constants.swift in Sources */,
 				2FE80AE629131220000B0222 /* BodyWeightLogsScreen.swift in Sources */,
-				2FE80AEA29131232000B0222 /* FastLogsScreen.swift in Sources */,
 				2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */,
 				2F5843FA29123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift in Sources */,
 				2F58440C2913081E00A9F76F /* Tab.swift in Sources */,
 				2F5843F329123C8700A9F76F /* BiometricLog+CoreDataClass.swift in Sources */,
-				2FE80AEC29131251000B0222 /* SleepLogsScreen.swift in Sources */,
 				2F5843DC29123AF900A9F76F /* Entities.xcdatamodeld in Sources */,
 				2F7B876B291E27C5008E889C /* ActiveLogView.swift in Sources */,
 			);
