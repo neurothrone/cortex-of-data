@@ -8,50 +8,25 @@
 import SwiftUI
 
 struct ActiveLogsScreen: View {
-  @FetchRequest(
-    fetchRequest: FastLog.incompleteLogs(),
-    animation: .default
-  )
-  private var incompleteFastLogs: FetchedResults<FastLog>
+  @Environment(\.managedObjectContext) private var viewContext
   
   @FetchRequest(
-    fetchRequest: SleepLog.incompleteLogs(),
+    fetchRequest: TimeFrameLog.incompleteLogs(),
     animation: .default
   )
-  private var incompleteSleepLogs: FetchedResults<SleepLog>
-  
-  @FetchRequest(
-    fetchRequest: WalkLog.incompleteLogs(),
-    animation: .default
-  )
-  private var incompleteWalkLogs: FetchedResults<WalkLog>
+  private var incompleteLogs: FetchedResults<TimeFrameLog>
   
   var body: some View {
     NavigationStack {
       List {
-        if let fastLog = incompleteFastLogs.first {
+        ForEach(incompleteLogs) { log in
           Section {
-            Text(fastLog.startedDate.inReadableFormat)
+            Text(log.startedDate.inReadableFormat)
           } header: {
-            Text("Active Fast Log")
+            Text("Active \(log.name) log")
           }
         }
-        
-        if let sleepLog = incompleteSleepLogs.first {
-          Section {
-            Text(sleepLog.startedDate.inReadableFormat)
-          } header: {
-            Text("Active Sleep Log")
-          }
-        }
-        
-        if let walkLog = incompleteWalkLogs.first {
-          Section {
-            Text(walkLog.startedDate.inReadableFormat)
-          } header: {
-            Text("Active Walk Log")
-          }
-        }
+        .onDelete(perform: deleteLog)
       }
       .navigationTitle("Active Logs")
       .navigationBarTitleDisplayMode(.inline)
@@ -59,8 +34,17 @@ struct ActiveLogsScreen: View {
   }
 }
 
+extension ActiveLogsScreen {
+  private func deleteLog(atOffsets: IndexSet) {
+    guard let index = atOffsets.first else { return }
+    
+    incompleteLogs[index].delete(using: viewContext)
+  }
+}
+
 struct ActiveLogsScreen_Previews: PreviewProvider {
   static var previews: some View {
     ActiveLogsScreen()
+      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }

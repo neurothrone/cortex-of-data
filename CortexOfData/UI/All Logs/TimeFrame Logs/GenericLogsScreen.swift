@@ -20,7 +20,7 @@ struct GenericLogsScreen<T: TimeFrameLog>: View {
   
   var body: some View {
     LogListView(logs: logs)
-      .navigationTitle("\(T.name) logs")
+      .navigationTitle("\(T.className) logs")
       .sheet(isPresented: $isAddManualLogPresented) {
         AddManualLogSheet<T>()
           .presentationDetents(
@@ -32,7 +32,7 @@ struct GenericLogsScreen<T: TimeFrameLog>: View {
       .toolbar {
         Menu {
           Button(action: { isAddManualLogPresented.toggle() }) {
-            Label("Add \(T.name) log manually", systemImage: "calendar.badge.plus")
+            Label("Add \(T.className) log manually", systemImage: "calendar.badge.plus")
           }
         } label: {
           Image(systemName: "ellipsis.circle")

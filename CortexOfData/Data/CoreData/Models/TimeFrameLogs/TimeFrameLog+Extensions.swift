@@ -15,7 +15,20 @@ extension TimeFrameLog {
     return startedDate.distance(to: stoppedDate)
   }
   
-  static var name: String {
+  var name: String {
+    switch Self.self {
+    case is FastLog.Type:
+      return "fast"
+    case is SleepLog.Type:
+      return "sleep"
+    case is WalkLog.Type:
+      return "walk"
+    default:
+      return "unknown"
+    }
+  }
+  
+  static var className: String {
     switch Self.self {
     case is FastLog.Type:
       return "Fast"
