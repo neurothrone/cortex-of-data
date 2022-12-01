@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F1007BE2919EC1C004CE72E /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */; };
 		2F1007DB291A010A004CE72E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007DA291A010A004CE72E /* Date+Extensions.swift */; };
+		2F3E3D0429383CE00049D3B6 /* WalkLogIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */; };
 		2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */; };
 		2F5843CB291239A400A9F76F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843CA291239A400A9F76F /* ContentView.swift */; };
 		2F5843CD291239A500A9F76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843CC291239A500A9F76F /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastLog+Preview.swift"; sourceTree = "<group>"; };
 		2F1007DA291A010A004CE72E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkLogIntents.swift; sourceTree = "<group>"; };
 		2F5843C5291239A400A9F76F /* CortexOfData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CortexOfData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CortexOfDataApp.swift; sourceTree = "<group>"; };
 		2F5843CA291239A400A9F76F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3E3D0229383CBB0049D3B6 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
 		2F5843BC291239A400A9F76F = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 				2F5843CC291239A500A9F76F /* Assets.xcassets */,
 				2F5843CE291239A500A9F76F /* CortexOfData.entitlements */,
 				2FE80AF329132B9E000B0222 /* Info.plist */,
+				2F3E3D0229383CBB0049D3B6 /* Shortcuts */,
 				2F5843D829123AE300A9F76F /* Data */,
 				2F5844032912401A00A9F76F /* Extensions */,
 				2F58440A2913081800A9F76F /* UI */,
@@ -145,7 +156,6 @@
 		2F5843D829123AE300A9F76F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2F58440229123F3200A9F76F /* Shared */,
 				2F5843D929123AE800A9F76F /* CoreData */,
 			);
 			path = Data;
@@ -192,13 +202,6 @@
 				2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */,
 			);
 			path = BiometricLogs;
-			sourceTree = "<group>";
-		};
-		2F58440229123F3200A9F76F /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		2F5844032912401A00A9F76F /* Extensions */ = {
@@ -393,6 +396,7 @@
 				2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */,
 				2F1007BE2919EC1C004CE72E /* FastLog+Preview.swift in Sources */,
 				2F7B879B29242561008E889C /* LogListView.swift in Sources */,
+				2F3E3D0429383CE00049D3B6 /* WalkLogIntents.swift in Sources */,
 				2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */,
 				2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */,
 				2F7B87B22925AB34008E889C /* Constants.swift in Sources */,
