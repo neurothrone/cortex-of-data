@@ -74,10 +74,8 @@ extension SwipeableLogView {
   }
   
   private func createPartialFeedLog() {
-    let newLog = T(context: viewContext)
-    newLog.startedDate = .now
-    CoreDataProvider.save(using: viewContext)
-    
+    TimeFrameLog.createPartialLog(of: T.self, using: viewContext)
+
     isTimerRunning = true
   }
   
@@ -85,15 +83,14 @@ extension SwipeableLogView {
     guard let incompleteLog = incompleteLogs.first else { return }
     
     isTimerRunning = false
-    incompleteLog.stoppedDate = .now
-    CoreDataProvider.save(using: viewContext)
+    
+    TimeFrameLog.completePartialLog(for: incompleteLog, using: viewContext)
   }
   
   private func resetPartialLog() {
     guard let incompleteLog = incompleteLogs.first else { return }
     
-    incompleteLog.startedDate = .now
-    CoreDataProvider.save(using: viewContext)
+    TimeFrameLog.resetPartialLog(for: incompleteLog, using: viewContext)
   }
 }
 
