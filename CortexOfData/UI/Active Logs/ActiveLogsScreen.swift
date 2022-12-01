@@ -11,7 +11,7 @@ struct ActiveLogsScreen: View {
   @Environment(\.managedObjectContext) private var viewContext
   
   @FetchRequest(
-    fetchRequest: TimeFrameLog.incompleteLogs(),
+    fetchRequest: TimeFrameLog.incompleteLogs(limitToOne: false),
     animation: .default
   )
   private var incompleteLogs: FetchedResults<TimeFrameLog>
