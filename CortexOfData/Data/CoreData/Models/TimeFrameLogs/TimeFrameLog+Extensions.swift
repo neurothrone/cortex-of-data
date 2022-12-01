@@ -49,10 +49,39 @@ extension TimeFrameLog {
     return request
   }
   
-  static func incompleteLogs<T: TimeFrameLog>() -> NSFetchRequest<T> {
+  static func incompleteLogs<T: TimeFrameLog>(limitToOne: Bool = true) -> NSFetchRequest<T> {
     let request: NSFetchRequest<T> = NSFetchRequest(entityName: String(describing: T.self))
     request.sortDescriptors = [NSSortDescriptor(keyPath: \T.startedDate, ascending: false)]
     request.predicate = NSPredicate(format: "stoppedDate == nil")
+    
+    if limitToOne {
+      request.fetchLimit = 1
+    }
+    
     return request
+  }
+  
+  static func getIncompleteLog<T: TimeFrameLog>(
+    of logType: T.Type,
+    using context: NSManagedObjectContext
+  ) throws -> T? {
+    let request: NSFetchRequest<T> = incompleteLogs()
+    return try context.fetch(request).first
+  }
+  
+  static func createPartialLog<T: TimeFrameLog>(of logType: T.Type, using context: NSManagedObjectContext) {
+    let newLog = T(context: context)
+    newLog.startedDate = .now
+    newLog.save(using: context)
+  }
+  
+  static func completePartialLog<T: TimeFrameLog>(for log: T, using context: NSManagedObjectContext) {
+    log.stoppedDate = .now
+    log.save(using: context)
+  }
+  
+  static func resetPartialLog<T: TimeFrameLog>(for log: T, using context: NSManagedObjectContext) {
+    log.startedDate = .now
+    log.save(using: context)
   }
 }
