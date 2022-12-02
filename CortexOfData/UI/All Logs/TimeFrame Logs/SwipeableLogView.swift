@@ -74,7 +74,7 @@ extension SwipeableLogView {
   }
   
   private func createPartialFeedLog() {
-    TimeFrameLog.createPartialLog(of: T.self, using: viewContext)
+    _ = TimeFrameLog.createPartialLog(of: T.self, using: viewContext)
 
     isTimerRunning = true
   }
