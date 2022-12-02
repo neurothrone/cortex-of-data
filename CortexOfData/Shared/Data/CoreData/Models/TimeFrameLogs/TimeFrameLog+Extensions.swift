@@ -69,10 +69,12 @@ extension TimeFrameLog {
     return try context.fetch(request).first
   }
   
-  static func createPartialLog<T: TimeFrameLog>(of logType: T.Type, using context: NSManagedObjectContext) {
+  static func createPartialLog<T: TimeFrameLog>(of logType: T.Type, using context: NSManagedObjectContext) -> T {
     let newLog = T(context: context)
     newLog.startedDate = .now
     newLog.save(using: context)
+    
+    return newLog
   }
   
   static func completePartialLog<T: TimeFrameLog>(for log: T, using context: NSManagedObjectContext) {
