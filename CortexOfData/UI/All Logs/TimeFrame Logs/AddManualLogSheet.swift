@@ -11,8 +11,10 @@ struct AddManualLogSheet<T: TimeFrameLog>: View {
   @Environment(\.dismiss) private var dismiss
   @Environment(\.managedObjectContext) private var viewContext
   
+  #if os(iOS)
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
+  #endif
   
   @State private var startedDate: Date = .now
   @State private var stoppedDate: Date = .now
@@ -20,6 +22,7 @@ struct AddManualLogSheet<T: TimeFrameLog>: View {
   var body: some View {
     NavigationStack {
       Form {
+        #if os(iOS)
         CustomDatePicker(
           selection: $startedDate,
           label: "Started date",
@@ -31,10 +34,12 @@ struct AddManualLogSheet<T: TimeFrameLog>: View {
           label: "Stopped date",
           displayMode: displayMode
         )
+        #endif
       }
       .navigationTitle("Add Manual Log")
       .navigationBarTitleDisplayMode(.inline)
       .toolbar {
+        #if os(iOS)
         ToolbarItem(placement: .navigationBarLeading) {
           Button("Cancel", role: .cancel, action: { dismiss() })
         }
@@ -43,6 +48,7 @@ struct AddManualLogSheet<T: TimeFrameLog>: View {
           Button("Done", action: addManualLog)
             .disabled(stoppedDate <= startedDate)
         }
+        #endif
       }
     }
   }

@@ -19,14 +19,18 @@ struct ActiveLogsScreen: View {
   var body: some View {
     NavigationStack {
       List {
-        ForEach(incompleteLogs) { log in
-          Section {
-            Text(log.startedDate.inReadableFormat)
-          } header: {
-            Text("Active \(log.name) log")
+        if incompleteLogs.isNotEmpty {
+          ForEach(incompleteLogs) { log in
+            Section {
+              Text(log.startedDate.inReadableFormat)
+            } header: {
+              Text("Active \(log.name) log")
+            }
           }
+          .onDelete(perform: deleteLog)
+        } else {
+          Text("No active logs yet.")
         }
-        .onDelete(perform: deleteLog)
       }
       .navigationTitle("Active Logs")
       .navigationBarTitleDisplayMode(.inline)

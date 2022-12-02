@@ -10,8 +10,10 @@ import SwiftUI
 struct GenericLogsScreen<T: TimeFrameLog>: View {
   @Environment(\.managedObjectContext) private var viewContext
   
+  #if os(iOS)
   @AppStorage(Constants.AppStorage.datePickerDisplayMode)
   private var displayMode: DatePickerDisplayMode = .compact
+  #endif
   
   @FetchRequest(fetchRequest: T.all(), animation: .default)
   private var logs: FetchedResults<T>
@@ -23,13 +25,16 @@ struct GenericLogsScreen<T: TimeFrameLog>: View {
       .navigationTitle("\(T.className) logs")
       .sheet(isPresented: $isAddManualLogPresented) {
         AddManualLogSheet<T>()
+        #if os(iOS)
           .presentationDetents(
             displayMode == .compact
             ? [.fraction(0.25), .medium, .large]
             : [.large]
           )
+        #endif
       }
       .toolbar {
+        #if os(iOS)
         Menu {
           Button(action: { isAddManualLogPresented.toggle() }) {
             Label("Add \(T.className) log manually", systemImage: "calendar.badge.plus")
@@ -37,6 +42,7 @@ struct GenericLogsScreen<T: TimeFrameLog>: View {
         } label: {
           Image(systemName: "ellipsis.circle")
         }
+        #endif
       }
   }
 }
