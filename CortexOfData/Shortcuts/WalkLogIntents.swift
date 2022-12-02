@@ -6,7 +6,6 @@
 //
 
 import AppIntents
-import CoreData
 
 @available(iOS 16, *)
 
@@ -34,7 +33,7 @@ struct StartWalkLogIntent: AppIntent {
       return .result(dialog: "There is already an active Walk log. Complete or remove it first.")
     }
     
-    TimeFrameLog.createPartialLog(of: WalkLog.self, using: context)
+    _ = TimeFrameLog.createPartialLog(of: WalkLog.self, using: context)
     return .result(dialog: "Created a Walk Log, get moving!")
   }
 }
@@ -89,7 +88,7 @@ struct ResetWalkLogIntent: AppIntent {
     }
     
     if let incompleteLog {
-      TimeFrameLog.completePartialLog(for: incompleteLog, using: context)
+      TimeFrameLog.resetPartialLog(for: incompleteLog, using: context)
       return .result(dialog: "Resetted the start time of your active Walk Log.")
     } else {
       return .result(dialog: "No incomplete log found. You must create a Walk log first.")
