@@ -10,7 +10,56 @@
 		2F1007BE2919EC1C004CE72E /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */; };
 		2F1007DB291A010A004CE72E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007DA291A010A004CE72E /* Date+Extensions.swift */; };
 		2F3E3D0429383CE00049D3B6 /* WalkLogIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */; };
-		2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */; };
+		2F3E3D08293861360049D3B6 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D07293861360049D3B6 /* SplashScreen.swift */; };
+		2F3E3D0A29386B6F0049D3B6 /* SplashScreenFuber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D0929386B6F0049D3B6 /* SplashScreenFuber.swift */; };
+		2F3E3D0D293872860049D3B6 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D0C293872860049D3B6 /* EntryView.swift */; };
+		2F3E3D7129389F990049D3B6 /* CortexOfData watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2F3E3D7029389F990049D3B6 /* CortexOfData watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F3E3D7629389F990049D3B6 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D7529389F990049D3B6 /* AppMain.swift */; };
+		2F3E3D7D29389F9A0049D3B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3E3D7C29389F9A0049D3B6 /* Preview Assets.xcassets */; };
+		2F3E3D862938A0580049D3B6 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440B2913081E00A9F76F /* Tab.swift */; };
+		2F3E3D872938A0A00049D3B6 /* ActiveLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440D2913087100A9F76F /* ActiveLogsScreen.swift */; };
+		2F3E3D882938A0B30049D3B6 /* AllLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440F2913087700A9F76F /* AllLogsScreen.swift */; };
+		2F3E3D892938A0B70049D3B6 /* GenericLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B72925AC18008E889C /* GenericLogsScreen.swift */; };
+		2F3E3D8A2938A0B70049D3B6 /* LogListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B878A291FF0CC008E889C /* LogListRowView.swift */; };
+		2F3E3D8B2938A0B70049D3B6 /* AddManualLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B32925AB7A008E889C /* AddManualLogSheet.swift */; };
+		2F3E3D8C2938A0B70049D3B6 /* SwipeableLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879C2924260E008E889C /* SwipeableLogView.swift */; };
+		2F3E3D8D2938A0B70049D3B6 /* ActiveLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876A291E27C5008E889C /* ActiveLogView.swift */; };
+		2F3E3D8E2938A0B70049D3B6 /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B879A29242561008E889C /* LogListView.swift */; };
+		2F3E3D8F2938A0C90049D3B6 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58440029123F2800A9F76F /* CoreDataProvider.swift */; };
+		2F3E3D902938A0C90049D3B6 /* CoreDataProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F584406291240F300A9F76F /* CoreDataProvider+Extensions.swift */; };
+		2F3E3D912938A0C90049D3B6 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B52925ABA1008E889C /* NSManagedObject+Extensions.swift */; };
+		2F3E3D922938A0CC0049D3B6 /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843DA29123AF900A9F76F /* Entities.xcdatamodeld */; };
+		2F3E3D932938A0D20049D3B6 /* SleepLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843DD29123C8700A9F76F /* SleepLog+CoreDataClass.swift */; };
+		2F3E3D942938A0D20049D3B6 /* WalkLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E129123C8700A9F76F /* WalkLog+CoreDataClass.swift */; };
+		2F3E3D952938A0D20049D3B6 /* TimeFrameLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843F829123D2E00A9F76F /* TimeFrameLog+CoreDataClass.swift */; };
+		2F3E3D962938A0D20049D3B6 /* TimeFrameLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AF129132480000B0222 /* TimeFrameLog+Extensions.swift */; };
+		2F3E3D972938A0D20049D3B6 /* FastLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E329123C8700A9F76F /* FastLog+CoreDataClass.swift */; };
+		2F3E3D982938A0D80049D3B6 /* BiometricLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E729123C8700A9F76F /* BiometricLog+CoreDataClass.swift */; };
+		2F3E3D992938A0D80049D3B6 /* BodyWeightLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843FC29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift */; };
+		2F3E3D9A2938A0D80049D3B6 /* HeartLog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843E529123C8700A9F76F /* HeartLog+CoreDataClass.swift */; };
+		2F3E3D9B2938A0E20049D3B6 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844042912402300A9F76F /* URL+Extensions.swift */; };
+		2F3E3D9C2938A0E20049D3B6 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844082912FD1500A9F76F /* TimeInterval+Extensions.swift */; };
+		2F3E3D9D2938A0E20049D3B6 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B876E291E283D008E889C /* DateFormatter+Extensions.swift */; };
+		2F3E3D9E2938A0E20049D3B6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007DA291A010A004CE72E /* Date+Extensions.swift */; };
+		2F3E3D9F2938A0E20049D3B6 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AF429133231000B0222 /* Collection+Extensions.swift */; };
+		2F3E3DA02938A0E90049D3B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87B12925AB34008E889C /* Constants.swift */; };
+		2F3E3DA12938A0F00049D3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843CC291239A500A9F76F /* Assets.xcassets */; };
+		2F3E3DA22938A1190049D3B6 /* FastLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */; };
+		2F3E3DA52938A23D0049D3B6 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5844112913087C00A9F76F /* SettingsScreen.swift */; };
+		2F3E3DA62938A24C0049D3B6 /* HeartMetricsLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE72913122A000B0222 /* HeartMetricsLogsScreen.swift */; };
+		2F3E3DA72938A24C0049D3B6 /* BodyWeightLogsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AE529131220000B0222 /* BodyWeightLogsScreen.swift */; };
+		2F3E3DA92938A3420049D3B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3DA82938A3420049D3B6 /* ContentView.swift */; };
+		2F3E3DAC2938A57E0049D3B6 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3DAB2938A57E0049D3B6 /* Screen.swift */; };
+		2F3E3DAD2938A5EE0049D3B6 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3DAB2938A57E0049D3B6 /* Screen.swift */; };
+		2F3E3DAE2938A68F0049D3B6 /* WalkLogIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */; };
+		2F3E3DB22938A9B60049D3B6 /* TimeFrameLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3DB12938A9B60049D3B6 /* TimeFrameLog+Preview.swift */; };
+		2F3E3DB32938A9B60049D3B6 /* TimeFrameLog+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3E3DB12938A9B60049D3B6 /* TimeFrameLog+Preview.swift */; };
+		2F3E3DB92938B9D80049D3B6 /* DatePickerDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B87AF2925AB0B008E889C /* DatePickerDisplayMode.swift */; };
+		2F4D9056293916B500D243BB /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D9055293916B500D243BB /* AppShortcuts.swift */; };
+		2F4D90582939B87300D243BB /* TimeFrameLogIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D90572939B87300D243BB /* TimeFrameLogIntents.swift */; };
+		2F4D905A2939C73F00D243BB /* ContentViewiPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D90592939C73F00D243BB /* ContentViewiPad.swift */; };
+		2F4D905C2939C74500D243BB /* ContentViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D905B2939C74500D243BB /* ContentViewMac.swift */; };
+		2F5843C9291239A400A9F76F /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843C8291239A400A9F76F /* AppMain.swift */; };
 		2F5843CB291239A400A9F76F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5843CA291239A400A9F76F /* ContentView.swift */; };
 		2F5843CD291239A500A9F76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843CC291239A500A9F76F /* Assets.xcassets */; };
 		2F5843D1291239A500A9F76F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5843D0291239A500A9F76F /* Preview Assets.xcassets */; };
@@ -47,12 +96,52 @@
 		2FE80AF529133231000B0222 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE80AF429133231000B0222 /* Collection+Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2F3E3D7229389F990049D3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F5843BD291239A400A9F76F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F3E3D6F29389F990049D3B6;
+			remoteInfo = "CortexOfData watchOS Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F3E3D8129389F9A0049D3B6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2F3E3D7129389F990049D3B6 /* CortexOfData watchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastLog+Preview.swift"; sourceTree = "<group>"; };
 		2F1007DA291A010A004CE72E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkLogIntents.swift; sourceTree = "<group>"; };
+		2F3E3D07293861360049D3B6 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		2F3E3D0929386B6F0049D3B6 /* SplashScreenFuber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenFuber.swift; sourceTree = "<group>"; };
+		2F3E3D0C293872860049D3B6 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		2F3E3D6B29389F990049D3B6 /* CortexOfData watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CortexOfData watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3E3D7029389F990049D3B6 /* CortexOfData watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CortexOfData watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3E3D7529389F990049D3B6 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		2F3E3D7C29389F9A0049D3B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F3E3DA82938A3420049D3B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2F3E3DAB2938A57E0049D3B6 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		2F3E3DAF2938A7E30049D3B6 /* CortexOfData watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CortexOfData watchOS.entitlements"; sourceTree = "<group>"; };
+		2F3E3DB02938A80A0049D3B6 /* Info watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info watchOS.plist"; sourceTree = SOURCE_ROOT; };
+		2F3E3DB12938A9B60049D3B6 /* TimeFrameLog+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeFrameLog+Preview.swift"; sourceTree = "<group>"; };
+		2F4D9055293916B500D243BB /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
+		2F4D90572939B87300D243BB /* TimeFrameLogIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFrameLogIntents.swift; sourceTree = "<group>"; };
+		2F4D90592939C73F00D243BB /* ContentViewiPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewiPad.swift; sourceTree = "<group>"; };
+		2F4D905B2939C74500D243BB /* ContentViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewMac.swift; sourceTree = "<group>"; };
 		2F5843C5291239A400A9F76F /* CortexOfData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CortexOfData.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CortexOfDataApp.swift; sourceTree = "<group>"; };
+		2F5843C8291239A400A9F76F /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F5843CA291239A400A9F76F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F5843CC291239A500A9F76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F5843CE291239A500A9F76F /* CortexOfData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CortexOfData.entitlements; sourceTree = "<group>"; };
@@ -92,6 +181,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F3E3D6D29389F990049D3B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F5843C2291239A400A9F76F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,15 +201,65 @@
 		2F3E3D0229383CBB0049D3B6 /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
+				2F4D9055293916B500D243BB /* AppShortcuts.swift */,
 				2F3E3D0329383CE00049D3B6 /* WalkLogIntents.swift */,
+				2F4D90572939B87300D243BB /* TimeFrameLogIntents.swift */,
 			);
 			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		2F3E3D0B2938727C0049D3B6 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2F3E3D07293861360049D3B6 /* SplashScreen.swift */,
+				2F3E3D0C293872860049D3B6 /* EntryView.swift */,
+				2F3E3D0929386B6F0049D3B6 /* SplashScreenFuber.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		2F3E3D7429389F990049D3B6 /* CortexOfData watchOS Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				2F3E3D7529389F990049D3B6 /* AppMain.swift */,
+				2F3E3DA82938A3420049D3B6 /* ContentView.swift */,
+				2F3E3DAF2938A7E30049D3B6 /* CortexOfData watchOS.entitlements */,
+				2F3E3DB02938A80A0049D3B6 /* Info watchOS.plist */,
+				2F3E3D7B29389F9A0049D3B6 /* Preview Content */,
+			);
+			path = "CortexOfData watchOS Watch App";
+			sourceTree = "<group>";
+		};
+		2F3E3D7B29389F9A0049D3B6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F3E3D7C29389F9A0049D3B6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F3E3DAA2938A5570049D3B6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2F3E3DAB2938A57E0049D3B6 /* Screen.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2F3E3DB82938B9D30049D3B6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2F58440B2913081E00A9F76F /* Tab.swift */,
+				2F7B87AF2925AB0B008E889C /* DatePickerDisplayMode.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		2F5843BC291239A400A9F76F = {
 			isa = PBXGroup;
 			children = (
 				2F5843C7291239A400A9F76F /* CortexOfData */,
+				2F3E3D7429389F990049D3B6 /* CortexOfData watchOS Watch App */,
 				2F5843C6291239A400A9F76F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				2F5843C5291239A400A9F76F /* CortexOfData.app */,
+				2F3E3D6B29389F990049D3B6 /* CortexOfData watchOS.app */,
+				2F3E3D7029389F990049D3B6 /* CortexOfData watchOS Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,16 +277,16 @@
 		2F5843C7291239A400A9F76F /* CortexOfData */ = {
 			isa = PBXGroup;
 			children = (
-				2F5843C8291239A400A9F76F /* CortexOfDataApp.swift */,
+				2F5843C8291239A400A9F76F /* AppMain.swift */,
 				2F5843CA291239A400A9F76F /* ContentView.swift */,
-				2F7B87B12925AB34008E889C /* Constants.swift */,
+				2F4D90592939C73F00D243BB /* ContentViewiPad.swift */,
+				2F4D905B2939C74500D243BB /* ContentViewMac.swift */,
 				2F5843CC291239A500A9F76F /* Assets.xcassets */,
 				2F5843CE291239A500A9F76F /* CortexOfData.entitlements */,
 				2FE80AF329132B9E000B0222 /* Info.plist */,
 				2F3E3D0229383CBB0049D3B6 /* Shortcuts */,
-				2F5843D829123AE300A9F76F /* Data */,
-				2F5844032912401A00A9F76F /* Extensions */,
 				2F58440A2913081800A9F76F /* UI */,
+				2F7B87B92925B1D2008E889C /* Shared */,
 				2F5843CF291239A500A9F76F /* Preview Content */,
 			);
 			path = CortexOfData;
@@ -148,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				2F1007BD2919EC1C004CE72E /* FastLog+Preview.swift */,
+				2F3E3DB12938A9B60049D3B6 /* TimeFrameLog+Preview.swift */,
 				2F5843D0291239A500A9F76F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -219,10 +368,10 @@
 		2F58440A2913081800A9F76F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2F3E3D0B2938727C0049D3B6 /* SplashScreen */,
 				2FE80ADD291311DC000B0222 /* Active Logs */,
 				2FE80ADC291311D7000B0222 /* All Logs */,
 				2FE80ADE291311DF000B0222 /* Settings */,
-				2F7B87B92925B1D2008E889C /* Shared */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -230,6 +379,11 @@
 		2F7B87B92925B1D2008E889C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2F7B87B12925AB34008E889C /* Constants.swift */,
+				2F3E3DB82938B9D30049D3B6 /* Enums */,
+				2F5843D829123AE300A9F76F /* Data */,
+				2F5844032912401A00A9F76F /* Extensions */,
+				2F3E3DAA2938A5570049D3B6 /* Navigation */,
 				2F7B87BA2925B1D4008E889C /* Models */,
 				2F7B87BB2925B1D8008E889C /* Views */,
 			);
@@ -239,8 +393,6 @@
 		2F7B87BA2925B1D4008E889C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2F58440B2913081E00A9F76F /* Tab.swift */,
-				2F7B87AF2925AB0B008E889C /* DatePickerDisplayMode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +456,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2F3E3D6A29389F990049D3B6 /* CortexOfData watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F3E3D8229389F9A0049D3B6 /* Build configuration list for PBXNativeTarget "CortexOfData watchOS" */;
+			buildPhases = (
+				2F3E3D6929389F990049D3B6 /* Resources */,
+				2F3E3D8129389F9A0049D3B6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F3E3D7329389F990049D3B6 /* PBXTargetDependency */,
+			);
+			name = "CortexOfData watchOS";
+			productName = "CortexOfData watchOS";
+			productReference = 2F3E3D6B29389F990049D3B6 /* CortexOfData watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2F3E3D6F29389F990049D3B6 /* CortexOfData watchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F3E3D7E29389F9A0049D3B6 /* Build configuration list for PBXNativeTarget "CortexOfData watchOS Watch App" */;
+			buildPhases = (
+				2F3E3D6C29389F990049D3B6 /* Sources */,
+				2F3E3D6D29389F990049D3B6 /* Frameworks */,
+				2F3E3D6E29389F990049D3B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CortexOfData watchOS Watch App";
+			productName = "CortexOfData watchOS Watch App";
+			productReference = 2F3E3D7029389F990049D3B6 /* CortexOfData watchOS Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2F5843C4291239A400A9F76F /* CortexOfData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F5843D4291239A500A9F76F /* Build configuration list for PBXNativeTarget "CortexOfData" */;
@@ -328,9 +514,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					2F3E3D6A29389F990049D3B6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2F3E3D6F29389F990049D3B6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					2F5843C4291239A400A9F76F = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -350,11 +542,29 @@
 			projectRoot = "";
 			targets = (
 				2F5843C4291239A400A9F76F /* CortexOfData */,
+				2F3E3D6A29389F990049D3B6 /* CortexOfData watchOS */,
+				2F3E3D6F29389F990049D3B6 /* CortexOfData watchOS Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F3E3D6929389F990049D3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F3E3D6E29389F990049D3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3E3D7D29389F9A0049D3B6 /* Preview Assets.xcassets in Resources */,
+				2F3E3DA12938A0F00049D3B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F5843C3291239A400A9F76F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,10 +577,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F3E3D6C29389F990049D3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3E3D992938A0D80049D3B6 /* BodyWeightLog+CoreDataClass.swift in Sources */,
+				2F3E3D882938A0B30049D3B6 /* AllLogsScreen.swift in Sources */,
+				2F3E3D942938A0D20049D3B6 /* WalkLog+CoreDataClass.swift in Sources */,
+				2F3E3D972938A0D20049D3B6 /* FastLog+CoreDataClass.swift in Sources */,
+				2F3E3D902938A0C90049D3B6 /* CoreDataProvider+Extensions.swift in Sources */,
+				2F3E3DA52938A23D0049D3B6 /* SettingsScreen.swift in Sources */,
+				2F3E3DA02938A0E90049D3B6 /* Constants.swift in Sources */,
+				2F3E3D862938A0580049D3B6 /* Tab.swift in Sources */,
+				2F3E3D7629389F990049D3B6 /* AppMain.swift in Sources */,
+				2F3E3D8D2938A0B70049D3B6 /* ActiveLogView.swift in Sources */,
+				2F3E3DB32938A9B60049D3B6 /* TimeFrameLog+Preview.swift in Sources */,
+				2F3E3D922938A0CC0049D3B6 /* Entities.xcdatamodeld in Sources */,
+				2F3E3D9F2938A0E20049D3B6 /* Collection+Extensions.swift in Sources */,
+				2F3E3D932938A0D20049D3B6 /* SleepLog+CoreDataClass.swift in Sources */,
+				2F3E3D872938A0A00049D3B6 /* ActiveLogsScreen.swift in Sources */,
+				2F3E3D9E2938A0E20049D3B6 /* Date+Extensions.swift in Sources */,
+				2F3E3D912938A0C90049D3B6 /* NSManagedObject+Extensions.swift in Sources */,
+				2F3E3D962938A0D20049D3B6 /* TimeFrameLog+Extensions.swift in Sources */,
+				2F3E3D9B2938A0E20049D3B6 /* URL+Extensions.swift in Sources */,
+				2F3E3D982938A0D80049D3B6 /* BiometricLog+CoreDataClass.swift in Sources */,
+				2F3E3D8C2938A0B70049D3B6 /* SwipeableLogView.swift in Sources */,
+				2F3E3D8B2938A0B70049D3B6 /* AddManualLogSheet.swift in Sources */,
+				2F3E3DB92938B9D80049D3B6 /* DatePickerDisplayMode.swift in Sources */,
+				2F3E3D8A2938A0B70049D3B6 /* LogListRowView.swift in Sources */,
+				2F3E3DA22938A1190049D3B6 /* FastLog+Preview.swift in Sources */,
+				2F3E3DA92938A3420049D3B6 /* ContentView.swift in Sources */,
+				2F3E3DA62938A24C0049D3B6 /* HeartMetricsLogsScreen.swift in Sources */,
+				2F3E3D892938A0B70049D3B6 /* GenericLogsScreen.swift in Sources */,
+				2F3E3DAE2938A68F0049D3B6 /* WalkLogIntents.swift in Sources */,
+				2F3E3DA72938A24C0049D3B6 /* BodyWeightLogsScreen.swift in Sources */,
+				2F3E3D8E2938A0B70049D3B6 /* LogListView.swift in Sources */,
+				2F3E3D952938A0D20049D3B6 /* TimeFrameLog+CoreDataClass.swift in Sources */,
+				2F3E3D9C2938A0E20049D3B6 /* TimeInterval+Extensions.swift in Sources */,
+				2F3E3D8F2938A0C90049D3B6 /* CoreDataProvider.swift in Sources */,
+				2F3E3DAD2938A5EE0049D3B6 /* Screen.swift in Sources */,
+				2F3E3D9D2938A0E20049D3B6 /* DateFormatter+Extensions.swift in Sources */,
+				2F3E3D9A2938A0D80049D3B6 /* HeartLog+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F5843C1291239A400A9F76F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4D905A2939C73F00D243BB /* ContentViewiPad.swift in Sources */,
 				2F58440129123F2800A9F76F /* CoreDataProvider.swift in Sources */,
 				2F584407291240F300A9F76F /* CoreDataProvider+Extensions.swift in Sources */,
 				2F7B87B62925ABA1008E889C /* NSManagedObject+Extensions.swift in Sources */,
@@ -379,26 +634,34 @@
 				2F58440E2913087100A9F76F /* ActiveLogsScreen.swift in Sources */,
 				2F7B87B42925AB7A008E889C /* AddManualLogSheet.swift in Sources */,
 				2F5844052912402300A9F76F /* URL+Extensions.swift in Sources */,
+				2F4D90582939B87300D243BB /* TimeFrameLogIntents.swift in Sources */,
 				2FE80AF529133231000B0222 /* Collection+Extensions.swift in Sources */,
 				2F5844092912FD1500A9F76F /* TimeInterval+Extensions.swift in Sources */,
 				2F5843CB291239A400A9F76F /* ContentView.swift in Sources */,
 				2F5843F129123C8700A9F76F /* HeartLog+CoreDataClass.swift in Sources */,
 				2F5843FE29123ED700A9F76F /* BodyWeightLog+CoreDataClass.swift in Sources */,
 				2F7B87B02925AB0B008E889C /* DatePickerDisplayMode.swift in Sources */,
+				2F3E3D0D293872860049D3B6 /* EntryView.swift in Sources */,
 				2F5843ED29123C8700A9F76F /* WalkLog+CoreDataClass.swift in Sources */,
+				2F4D905C2939C74500D243BB /* ContentViewMac.swift in Sources */,
+				2F3E3DB22938A9B60049D3B6 /* TimeFrameLog+Preview.swift in Sources */,
 				2F7B879D2924260E008E889C /* SwipeableLogView.swift in Sources */,
 				2F7B878B291FF0CC008E889C /* LogListRowView.swift in Sources */,
+				2F3E3D0A29386B6F0049D3B6 /* SplashScreenFuber.swift in Sources */,
 				2F1007DB291A010A004CE72E /* Date+Extensions.swift in Sources */,
 				2F5843EF29123C8700A9F76F /* FastLog+CoreDataClass.swift in Sources */,
+				2F4D9056293916B500D243BB /* AppShortcuts.swift in Sources */,
 				2F7B876F291E283D008E889C /* DateFormatter+Extensions.swift in Sources */,
 				2FE80AE82913122A000B0222 /* HeartMetricsLogsScreen.swift in Sources */,
 				2FE80AF229132480000B0222 /* TimeFrameLog+Extensions.swift in Sources */,
 				2F5844122913087C00A9F76F /* SettingsScreen.swift in Sources */,
 				2F1007BE2919EC1C004CE72E /* FastLog+Preview.swift in Sources */,
+				2F3E3D08293861360049D3B6 /* SplashScreen.swift in Sources */,
 				2F7B879B29242561008E889C /* LogListView.swift in Sources */,
 				2F3E3D0429383CE00049D3B6 /* WalkLogIntents.swift in Sources */,
 				2F5844102913087700A9F76F /* AllLogsScreen.swift in Sources */,
-				2F5843C9291239A400A9F76F /* CortexOfDataApp.swift in Sources */,
+				2F3E3DAC2938A57E0049D3B6 /* Screen.swift in Sources */,
+				2F5843C9291239A400A9F76F /* AppMain.swift in Sources */,
 				2F7B87B22925AB34008E889C /* Constants.swift in Sources */,
 				2FE80AE629131220000B0222 /* BodyWeightLogsScreen.swift in Sources */,
 				2F5843E929123C8700A9F76F /* SleepLog+CoreDataClass.swift in Sources */,
@@ -412,7 +675,113 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2F3E3D7329389F990049D3B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F3E3D6F29389F990049D3B6 /* CortexOfData watchOS Watch App */;
+			targetProxy = 2F3E3D7229389F990049D3B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2F3E3D7F29389F9A0049D3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CortexOfData watchOS Watch App/CortexOfData watchOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CortexOfData watchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Info watchOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CortexOfData watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.CortexOfData-watchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		2F3E3D8029389F9A0049D3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CortexOfData watchOS Watch App/CortexOfData watchOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CortexOfData watchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Info watchOS.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CortexOfData watchOS";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.CortexOfData-watchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		2F3E3D8329389F9A0049D3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				INFOPLIST_KEY_CFBundleDisplayName = "CortexOfData watchOS";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.CortexOfData-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2F3E3D8429389F9A0049D3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BP826FJGX;
+				INFOPLIST_KEY_CFBundleDisplayName = "CortexOfData watchOS";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.neurothrone.CortexOfData-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		2F5843D2291239A500A9F76F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -613,6 +982,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F3E3D7E29389F9A0049D3B6 /* Build configuration list for PBXNativeTarget "CortexOfData watchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F3E3D7F29389F9A0049D3B6 /* Debug */,
+				2F3E3D8029389F9A0049D3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F3E3D8229389F9A0049D3B6 /* Build configuration list for PBXNativeTarget "CortexOfData watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F3E3D8329389F9A0049D3B6 /* Debug */,
+				2F3E3D8429389F9A0049D3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2F5843C0291239A400A9F76F /* Build configuration list for PBXProject "CortexOfData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

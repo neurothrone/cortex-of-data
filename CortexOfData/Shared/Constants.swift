@@ -8,6 +8,10 @@
 import Foundation
 
 enum Constants {
+  struct App {
+    static let name = "Cortex of Data"
+  }
+  
   struct AppStorage {
     static let selectedTab = "selectedTab"
     static let datePickerDisplayMode = "datePickerDisplayMode"
