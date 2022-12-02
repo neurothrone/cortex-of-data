@@ -7,39 +7,14 @@
 
 import SwiftUI
 
-private extension Tab {
-  @ViewBuilder
-  var view: some View {
-    switch self {
-    case .activeLogs:
-      ActiveLogsScreen()
-    case .allLogs:
-      AllLogsScreen()
-    case .settings:
-      SettingsScreen()
-    }
-  }
-  
-  var systemImage: String {
-    switch self {
-    case .activeLogs:
-      return "clock"
-    case .allLogs:
-      return "list.bullet.circle"
-    case .settings:
-      return "gear"
-    }
-  }
-}
-
 struct ContentView: View {
-  @AppStorage("selectedTab")
-  private var selectedTab: Tab = .activeLogs
+  @AppStorage(Constants.AppStorage.selectedTab)
+  private var selectedTab: Screen = .activeLogs
   
   var body: some View {
     TabView(selection: $selectedTab) {
       Group {
-        ForEach(Tab.allCases) { tab in
+        ForEach(Screen.allCases) { tab in
           tab.view
             .tabItem {
               Label(tab.rawValue, systemImage: tab.systemImage)
@@ -55,5 +30,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+      .environment(\.managedObjectContext, CoreDataProvider.preview.viewContext)
   }
 }
