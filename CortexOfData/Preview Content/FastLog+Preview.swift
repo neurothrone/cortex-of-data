@@ -10,10 +10,12 @@ import Foundation
 
 extension FastLog {
   enum Preview {
-    static func createSample(using context: NSManagedObjectContext) {
-      let fastLog = FastLog(context: context)
-      fastLog.startedDate = .now.subtracting(hours: 2)
-      CoreDataProvider.save(using: context)
+    static func createSample(
+      using context: NSManagedObjectContext
+    ) {
+      let log = TimeFrameLog.createPartialLog(of: FastLog.self, using: context)
+      log.startedDate = .now.subtracting(hours: 2)
+      log.save(using: context)
     }
   }
 }
